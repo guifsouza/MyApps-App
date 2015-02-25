@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) NSArray *appDetailModel;
 
+- (IBAction)voltar:(id)sender;
+
 @end

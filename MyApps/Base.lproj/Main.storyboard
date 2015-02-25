@@ -19,9 +19,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Vo-hd-qR4" id="qaY-dN-Xhq">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m69-Ua-bnj">
-                                            <rect key="frame" x="8" y="0.0" width="155" height="122"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbI-GX-rgw">
                                             <rect key="frame" x="171" y="8" width="496" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -34,6 +31,9 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m69-Ua-bnj">
+                                            <rect key="frame" x="26" y="0.0" width="122" height="122"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -72,8 +72,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-NZ-vUA">
-                                <rect key="frame" x="262" y="118" width="76" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-NZ-vUA">
+                                <rect key="frame" x="16" y="118" width="568" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,27 +89,34 @@
                                 <state key="normal" title="Voltar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="voltar:" destination="gzf-Lv-59O" eventType="touchUpInside" id="7U7-V0-QBm"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-jr-UQi">
-                                <rect key="frame" x="153" y="163" width="294" height="352"/>
+                                <rect key="frame" x="124" y="163" width="352" height="352"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="352" id="XuQ-d6-zof"/>
-                                    <constraint firstAttribute="width" constant="294" id="s8g-Lc-DN0"/>
+                                    <constraint firstAttribute="height" constant="352" id="bF4-dX-9Tq"/>
+                                    <constraint firstAttribute="width" constant="352" id="dtl-HR-9Qd"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fTT-NZ-vUA" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="98" id="5AO-6H-y6k"/>
                             <constraint firstAttribute="centerX" secondItem="XgH-2i-ueO" secondAttribute="centerX" id="8pg-6U-Svy"/>
+                            <constraint firstItem="fTT-NZ-vUA" firstAttribute="leading" secondItem="XAA-5x-neL" secondAttribute="leadingMargin" id="9Pm-ej-P1V"/>
                             <constraint firstItem="9ll-Vv-ChL" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="8" id="HJe-Wg-UDp"/>
-                            <constraint firstItem="DEl-jr-UQi" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="143" id="Jh7-Rt-930"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ll-Vv-ChL" secondAttribute="trailing" id="PbY-zm-1l2"/>
-                            <constraint firstAttribute="centerX" secondItem="DEl-jr-UQi" secondAttribute="centerX" id="Pdd-Hw-2RX"/>
                             <constraint firstAttribute="centerX" secondItem="9ll-Vv-ChL" secondAttribute="centerX" id="Rwf-7y-dbb"/>
                             <constraint firstItem="uBm-Tt-LUu" firstAttribute="top" secondItem="XgH-2i-ueO" secondAttribute="bottom" constant="20" id="SJS-7p-1JQ"/>
                             <constraint firstAttribute="centerX" secondItem="LkS-Sd-gQr" secondAttribute="centerX" constant="-0.5" id="SpY-eQ-YPr"/>
+                            <constraint firstAttribute="centerX" secondItem="fTT-NZ-vUA" secondAttribute="centerX" id="bjE-RM-YwQ"/>
+                            <constraint firstAttribute="centerX" secondItem="DEl-jr-UQi" secondAttribute="centerX" id="bxE-qF-SVm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fTT-NZ-vUA" secondAttribute="trailing" id="h2R-ZF-acV"/>
                             <constraint firstItem="9ll-Vv-ChL" firstAttribute="leading" secondItem="XAA-5x-neL" secondAttribute="leadingMargin" id="h5S-jQ-3yt"/>
                             <constraint firstItem="LkS-Sd-gQr" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="69" id="rtu-DI-tSK"/>
+                            <constraint firstItem="DEl-jr-UQi" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="143" id="uNU-9G-wCo"/>
                         </constraints>
                     </view>
                     <connections>

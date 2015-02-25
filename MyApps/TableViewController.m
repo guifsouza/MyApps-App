@@ -34,6 +34,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    //_imgFotoApp.image = [UIImage imageNamed:_appDetailModel[2]];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -63,7 +68,7 @@
     
     cell.lblNome.text = _Nome[row];
     cell.lblCategoria.text = _Categoria[row];
-//    cell.viewImgFoto = [UIImage imageNamed:_Imagem[row]];
+    cell.imgView.image = [UIImage imageNamed:_Imagem[row]];
     
     return cell;
 }
