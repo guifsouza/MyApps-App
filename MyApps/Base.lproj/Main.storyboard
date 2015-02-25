@@ -40,7 +40,7 @@
                                     <outlet property="imgView" destination="m69-Ua-bnj" id="eDO-4l-37m"/>
                                     <outlet property="lblCategoria" destination="m3A-gE-CB9" id="L7O-yr-NV9"/>
                                     <outlet property="lblNome" destination="fbI-GX-rgw" id="PHF-lS-oth"/>
-                                    <segue destination="gzf-Lv-59O" kind="show" id="Urd-sk-Sjr"/>
+                                    <segue destination="gzf-Lv-59O" kind="show" identifier="ShowAppDetails" id="Urd-sk-Sjr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

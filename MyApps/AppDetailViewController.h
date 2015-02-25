@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblCategoria;
 @property (weak, nonatomic) IBOutlet UIImageView *imgFotoApp;
 
-@property (strong, nonatomic) NSArray appDetailModel;
+@property (strong, nonatomic) NSArray *appDetailModel;
 
 @end
