@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ema-XE-gVn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EdT-Yr-JPU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Seus aplicativos-->
         <scene sceneID="Ijd-zo-Ltp">
             <objects>
                 <tableViewController id="ema-XE-gVn" customClass="TableViewController" sceneMemberID="viewController">
@@ -49,10 +49,38 @@
                             <outlet property="delegate" destination="ema-XE-gVn" id="1vX-1f-LlI"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Seus aplicativos" id="fto-zj-Ayo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="SwS-9e-TAh">
+                            <connections>
+                                <action selector="editTable:" destination="ema-XE-gVn" id="cBb-CJ-Qmj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xvQ-OS-V6K">
+                            <connections>
+                                <action selector="addApp:" destination="ema-XE-gVn" id="D2k-BH-9PO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N96-yR-WKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4232" y="1024"/>
+            <point key="canvasLocation" x="4168" y="1420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tdy-u8-Au8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4de-RU-Wn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="EdT-Yr-JPU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Id-QJ-E1a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ema-XE-gVn" kind="relationship" relationship="rootViewController" id="tc7-Rd-hgY"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3452" y="1420"/>
         </scene>
         <!--App Detail View Controller-->
         <scene sceneID="XK8-7H-AKd">
@@ -132,7 +160,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmf-ky-c71" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="down" id="6JG-Fs-kUq"/>
             </objects>
-            <point key="canvasLocation" x="5015" y="1058"/>
+            <point key="canvasLocation" x="4919" y="1410"/>
         </scene>
     </scenes>
 </document>
