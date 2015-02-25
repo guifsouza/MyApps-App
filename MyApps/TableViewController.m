@@ -99,19 +99,36 @@
     }
 }
 
-/*
+- (IBAction)addApp:(id)sender {
+    
+    
+    [self.tableView reloadData];
+}
+- (IBAction)editTable:(id)sender {
+    [self.tableView setEditing: YES];
+}
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
-/*
+    // É assim que faz pra mover by: noone
+//    NSString *aux = [_Nome objectAtIndex:[fromIndexPath row]];
+//    [_Nome removeObjectAtIndex:fromIndexPath.row];
+//    [_Nome insertObject:aux atIndex:toIndexPath.row];
+//    
+    
+    
+}
+
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 #pragma mark - Navigation
 
