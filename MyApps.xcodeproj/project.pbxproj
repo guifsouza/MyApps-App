@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256D40611A9E4A9B009F39F1 /* AppDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256D40601A9E4A9B009F39F1 /* AppDetailViewController.m */; };
 		25C135141A9E120B006DA4C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C135131A9E120B006DA4C3 /* main.m */; };
 		25C135171A9E120B006DA4C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C135161A9E120B006DA4C3 /* AppDelegate.m */; };
 		25C1351D1A9E120B006DA4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1351B1A9E120B006DA4C3 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256D405F1A9E4A9B009F39F1 /* AppDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDetailViewController.h; sourceTree = "<group>"; };
+		256D40601A9E4A9B009F39F1 /* AppDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDetailViewController.m; sourceTree = "<group>"; };
 		25C1350E1A9E120B006DA4C3 /* MyApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C135121A9E120B006DA4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C135131A9E120B006DA4C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				25C135111A9E120B006DA4C3 /* Supporting Files */,
 				25C1353D1A9E164D006DA4C3 /* TableViewController.h */,
 				25C1353E1A9E164D006DA4C3 /* TableViewController.m */,
+				256D405F1A9E4A9B009F39F1 /* AppDetailViewController.h */,
+				256D40601A9E4A9B009F39F1 /* AppDetailViewController.m */,
 				25C135401A9E17DC006DA4C3 /* TableViewCell.h */,
 				25C135411A9E17DC006DA4C3 /* TableViewCell.m */,
 			);
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C135171A9E120B006DA4C3 /* AppDelegate.m in Sources */,
+				256D40611A9E4A9B009F39F1 /* AppDetailViewController.m in Sources */,
 				25C135421A9E17DC006DA4C3 /* TableViewCell.m in Sources */,
 				25C1353F1A9E164D006DA4C3 /* TableViewController.m in Sources */,
 				25C135141A9E120B006DA4C3 /* main.m in Sources */,
@@ -420,6 +426,7 @@
 				25C135331A9E120B006DA4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25C135341A9E120B006DA4C3 /* Build configuration list for PBXNativeTarget "MyAppsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				25C135361A9E120B006DA4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
