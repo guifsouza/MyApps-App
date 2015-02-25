@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _lblNomeApp.text = _appDetailModel[0];
+    _lblCategoria.text = _appDetailModel[1];
+    _imgFotoApp.image = [UIImage imageNamed:_appDetailModel[2]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

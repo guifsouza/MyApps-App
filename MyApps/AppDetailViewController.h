@@ -10,4 +10,10 @@
 
 @interface AppDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblNomeApp;
+@property (weak, nonatomic) IBOutlet UILabel *lblCategoria;
+@property (weak, nonatomic) IBOutlet UIImageView *imgFotoApp;
+
+@property (strong, nonatomic) NSArray appDetailModel;
+
 @end
