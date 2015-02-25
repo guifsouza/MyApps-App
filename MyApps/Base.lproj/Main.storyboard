@@ -95,10 +95,14 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-jr-UQi">
                                 <rect key="frame" x="124" y="163" width="352" height="352"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="352" id="bF4-dX-9Tq"/>
                                     <constraint firstAttribute="width" constant="352" id="dtl-HR-9Qd"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6JG-Fs-kUq" appends="YES" id="ifg-eV-AKy"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,6 +130,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmf-ky-c71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="6JG-Fs-kUq"/>
             </objects>
             <point key="canvasLocation" x="5015" y="1058"/>
         </scene>
