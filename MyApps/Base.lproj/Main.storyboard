@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ema-XE-gVn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -39,7 +40,7 @@
                                     <outlet property="imgView" destination="m69-Ua-bnj" id="eDO-4l-37m"/>
                                     <outlet property="lblCategoria" destination="m3A-gE-CB9" id="L7O-yr-NV9"/>
                                     <outlet property="lblNome" destination="fbI-GX-rgw" id="PHF-lS-oth"/>
-                                    <segue destination="gzf-Lv-59O" kind="show" id="Urd-sk-Sjr"/>
+                                    <segue destination="gzf-Lv-59O" kind="show" identifier="ShowAppDetails" id="Urd-sk-Sjr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,12 +65,62 @@
                     <view key="view" contentMode="scaleToFill" id="XAA-5x-neL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ll-Vv-ChL">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-NZ-vUA">
+                                <rect key="frame" x="262" y="118" width="76" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-Sd-gQr">
+                                <rect key="frame" x="263" y="89" width="75" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-2i-ueO">
+                                <rect key="frame" x="280" y="550" width="39" height="30"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-jr-UQi">
+                                <rect key="frame" x="153" y="163" width="294" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="XuQ-d6-zof"/>
+                                    <constraint firstAttribute="width" constant="294" id="s8g-Lc-DN0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XgH-2i-ueO" secondAttribute="centerX" id="8pg-6U-Svy"/>
+                            <constraint firstItem="9ll-Vv-ChL" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="8" id="HJe-Wg-UDp"/>
+                            <constraint firstItem="DEl-jr-UQi" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="143" id="Jh7-Rt-930"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ll-Vv-ChL" secondAttribute="trailing" id="PbY-zm-1l2"/>
+                            <constraint firstAttribute="centerX" secondItem="DEl-jr-UQi" secondAttribute="centerX" id="Pdd-Hw-2RX"/>
+                            <constraint firstAttribute="centerX" secondItem="9ll-Vv-ChL" secondAttribute="centerX" id="Rwf-7y-dbb"/>
+                            <constraint firstItem="uBm-Tt-LUu" firstAttribute="top" secondItem="XgH-2i-ueO" secondAttribute="bottom" constant="20" id="SJS-7p-1JQ"/>
+                            <constraint firstAttribute="centerX" secondItem="LkS-Sd-gQr" secondAttribute="centerX" constant="-0.5" id="SpY-eQ-YPr"/>
+                            <constraint firstItem="9ll-Vv-ChL" firstAttribute="leading" secondItem="XAA-5x-neL" secondAttribute="leadingMargin" id="h5S-jQ-3yt"/>
+                            <constraint firstItem="LkS-Sd-gQr" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="69" id="rtu-DI-tSK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgFotoApp" destination="DEl-jr-UQi" id="YNj-fJ-Oxq"/>
+                        <outlet property="lblCategoria" destination="fTT-NZ-vUA" id="1lJ-JR-0ml"/>
+                        <outlet property="lblNomeApp" destination="9ll-Vv-ChL" id="GhW-oy-K54"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmf-ky-c71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939" y="1024"/>
+            <point key="canvasLocation" x="5015" y="1058"/>
         </scene>
     </scenes>
 </document>
