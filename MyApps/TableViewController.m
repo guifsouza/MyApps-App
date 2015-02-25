@@ -21,7 +21,7 @@
     _Nome = [[NSMutableArray alloc] initWithObjects: @"Contador", @"Quiz", @"Bricando com Fontes", @"MyApps", nil];
     _Categoria = [[NSMutableArray alloc] initWithObjects: @"Ferramentas", @"Entretenimento", @"Aprendizado", @"Business", nil];
     
-    _Imagem = [[NSMutableArray alloc]initWithObjects:<#(id), ...#>, nil];
+    //_Imagem = [[NSMutableArray alloc]initWithObjects:<#(id), ...#>, nil];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -105,7 +105,6 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    [segue TableViewCell];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
