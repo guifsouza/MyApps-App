@@ -21,6 +21,8 @@
     _Nome = [[NSMutableArray alloc] initWithObjects: @"Contador", @"Quiz", @"Bricando com Fontes", @"MyApps", nil];
     _Categoria = [[NSMutableArray alloc] initWithObjects: @"Ferramentas", @"Entretenimento", @"Aprendizado", @"Business", nil];
     
+    self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f); //Abaixa cells
+    
     //_Imagem = [[NSMutableArray alloc]initWithObjects:<#(id), ...#>, nil];
     
     
