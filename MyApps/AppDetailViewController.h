@@ -16,8 +16,6 @@
 
 @property (strong, nonatomic) NSArray *appDetailModel;
 
-- (IBAction)voltar:(id)sender;
-
 - (void)slideToDownWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
 
 @end
