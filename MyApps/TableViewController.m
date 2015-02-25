@@ -23,7 +23,7 @@
     
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f); //Abaixa cells
     
-    //_Imagem = [[NSMutableArray alloc]initWithObjects:<#(id), ...#>, nil];
+    _Imagem = [[NSMutableArray alloc]initWithObjects:@"contador", @"quiz", @"fonts", @"myapps", nil];
     
     
     // Uncomment the following line to preserve selection between presentations.
