@@ -105,7 +105,13 @@
     [self.tableView reloadData];
 }
 - (IBAction)editTable:(id)sender {
-    [self.tableView setEditing: YES];
+    if (self.tableView.editing == YES){
+        [self.tableView setEditing: NO];
+    }
+    else {
+        [self.tableView setEditing: YES];
+    }
+
 }
 
 
@@ -120,7 +126,6 @@
     
     
 }
-
 
 
 // Override to support conditional rearranging of the table view.
