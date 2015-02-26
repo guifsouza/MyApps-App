@@ -16,6 +16,6 @@
 
 @property (strong, nonatomic) NSArray *appDetailModel;
 
-- (void)slideToDownWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
+- (void)slideWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
 
 @end

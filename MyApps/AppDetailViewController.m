@@ -21,16 +21,16 @@
     _lblCategoria.text = _appDetailModel[1];
     _imgFotoApp.image = [UIImage imageNamed:_appDetailModel[2]];
     
-    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(slideToDownWithGestureRecognizer:)];
-    swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(slideWithGestureRecognizer:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;      //To RIGHT
     
-    [self.view addGestureRecognizer:swipeDown];
+    [self.view addGestureRecognizer:swipe];
     
 }
 
--(void)slideToDownWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer{
-            
-    [self dismissViewControllerAnimated:YES completion:nil];
+-(void)slideWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer{
+    
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 

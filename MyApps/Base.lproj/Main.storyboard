@@ -166,7 +166,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmf-ky-c71" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="6JG-Fs-kUq"/>
+                <swipeGestureRecognizer direction="right" id="6JG-Fs-kUq"/>
             </objects>
             <point key="canvasLocation" x="4919" y="1410"/>
         </scene>
