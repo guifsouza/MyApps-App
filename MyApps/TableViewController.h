@@ -14,4 +14,7 @@
 @property NSMutableArray *Categoria;
 @property NSMutableArray *Imagem;
 
+- (void)slideWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
+- (void)slideRightWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
+
 @end

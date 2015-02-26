@@ -26,6 +26,9 @@
     
     _Imagem = [[NSMutableArray alloc]initWithObjects:@"contador", @"quiz", @"fonts", @"myapps", nil];
     
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(slideWithGestureRecognizer:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;      //To right
+    [self.view addGestureRecognizer:swipe];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,9 +42,8 @@
     //_imgFotoApp.image = [UIImage imageNamed:_appDetailModel[2]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)slideWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer{   //Ativa edicao com swipe
+    self.editing = YES;
 }
 
 #pragma mark - Table view data source
@@ -53,7 +55,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
+    //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return _Nome.count;
 }
