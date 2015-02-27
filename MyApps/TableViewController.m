@@ -19,14 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //_Nome = [[NSMutableArray alloc] initWithObjects: @"Contador", @"Quiz", @"Bricando com Fontes", @"MyApps", nil];
-    //_Categoria = [[NSMutableArray alloc] initWithObjects: @"Ferramentas", @"Entretenimento", @"Aprendizado", @"Business", nil];
-    
+
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f); //Abaixa cells
-    
-    //_Imagem = [[NSMutableArray alloc]initWithObjects:@"contador", @"quiz", @"fonts", @"myapps", nil];
-    
     
     App *app1 = [[App alloc] initWithNome:@"Contador" andCateg:@"Ferramentas" andImg:@"contador"];
     App *app2 = [[App alloc] initWithNome:@"Quiz" andCateg:@"Entretenimento" andImg:@"quiz"];

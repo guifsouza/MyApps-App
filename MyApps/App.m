@@ -15,9 +15,9 @@
     
     if (self){
         
-        nome = n;
-        categoria = c;
-        imagem = i;
+        _nome = n;
+        _categoria = c;
+        _imagem = i;
         
     }
     
