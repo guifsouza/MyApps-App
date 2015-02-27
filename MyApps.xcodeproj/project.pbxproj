@@ -16,6 +16,7 @@
 		25C1352E1A9E120B006DA4C3 /* MyAppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1352D1A9E120B006DA4C3 /* MyAppsTests.m */; };
 		25C1353F1A9E164D006DA4C3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1353E1A9E164D006DA4C3 /* TableViewController.m */; };
 		25C135421A9E17DC006DA4C3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C135411A9E17DC006DA4C3 /* TableViewCell.m */; };
+		D650EE6C1AA087EB00590F29 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = D650EE6B1AA087EB00590F29 /* App.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		25C1353E1A9E164D006DA4C3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		25C135401A9E17DC006DA4C3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		25C135411A9E17DC006DA4C3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		D650EE6A1AA087EB00590F29 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		D650EE6B1AA087EB00590F29 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				256D40601A9E4A9B009F39F1 /* AppDetailViewController.m */,
 				25C135401A9E17DC006DA4C3 /* TableViewCell.h */,
 				25C135411A9E17DC006DA4C3 /* TableViewCell.m */,
+				D650EE6A1AA087EB00590F29 /* App.h */,
+				D650EE6B1AA087EB00590F29 /* App.m */,
 			);
 			path = MyApps;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				25C135171A9E120B006DA4C3 /* AppDelegate.m in Sources */,
 				256D40611A9E4A9B009F39F1 /* AppDetailViewController.m in Sources */,
 				25C135421A9E17DC006DA4C3 /* TableViewCell.m in Sources */,
+				D650EE6C1AA087EB00590F29 /* App.m in Sources */,
 				25C1353F1A9E164D006DA4C3 /* TableViewController.m in Sources */,
 				25C135141A9E120B006DA4C3 /* main.m in Sources */,
 			);
