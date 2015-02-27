@@ -10,9 +10,11 @@
 
 @interface TableViewController : UITableViewController
 
-@property NSMutableArray *Nome;
-@property NSMutableArray *Categoria;
-@property NSMutableArray *Imagem;
+//@property NSMutableArray *Nome;
+//@property NSMutableArray *Categoria;
+//@property NSMutableArray *Imagem;
+
+@property NSMutableArray *apps;
 
 - (void)slideWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;
 - (void)slideRightWithGestureRecognizer:(UISwipeGestureRecognizer *)gestureRecognizer;

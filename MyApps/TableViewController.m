@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "TableViewCell.h"
 #import "AppDetailViewController.h"
+#import "App.h"
 
 @interface TableViewController ()
 
@@ -19,12 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _Nome = [[NSMutableArray alloc] initWithObjects: @"Contador", @"Quiz", @"Bricando com Fontes", @"MyApps", nil];
-    _Categoria = [[NSMutableArray alloc] initWithObjects: @"Ferramentas", @"Entretenimento", @"Aprendizado", @"Business", nil];
+    //_Nome = [[NSMutableArray alloc] initWithObjects: @"Contador", @"Quiz", @"Bricando com Fontes", @"MyApps", nil];
+    //_Categoria = [[NSMutableArray alloc] initWithObjects: @"Ferramentas", @"Entretenimento", @"Aprendizado", @"Business", nil];
     
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f); //Abaixa cells
     
-    _Imagem = [[NSMutableArray alloc]initWithObjects:@"contador", @"quiz", @"fonts", @"myapps", nil];
+    //_Imagem = [[NSMutableArray alloc]initWithObjects:@"contador", @"quiz", @"fonts", @"myapps", nil];
+    
+    
+    App *app1 = [[App alloc] initWithNome:@"Contador" andCateg:@"Ferramentas" andImg:@"contador"];
+    App *app2 = [[App alloc] initWithNome:@"Quiz" andCateg:@"Entretenimento" andImg:@"quiz"];
+    App *app3 = [[App alloc] initWithNome:@"Bricando com Fontes" andCateg:@"Aprendizado" andImg:@"fonts"];
+    App *app4 = [[App alloc] initWithNome:@"MyApps" andCateg:@"Business" andImg:@"myapps"];
+    
+    _apps = [[NSMutableArray alloc] initWithObjects:app1, app2, app3, app4, nil];
+    
     
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(slideWithGestureRecognizer:)];
     swipe.direction = UISwipeGestureRecognizerDirectionRight;      //To right
@@ -57,7 +67,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return _Nome.count;
+    return _apps.count;
 }
 
 
@@ -68,9 +78,9 @@
     
     long row = [indexPath row];
     
-    cell.lblNome.text = _Nome[row];
-    cell.lblCategoria.text = _Categoria[row];
-    cell.imgView.image = [UIImage imageNamed:_Imagem[row]];
+    cell.lblNome.text = [_apps[row] nome];
+    cell.lblCategoria.text = [_apps[row] categoria];
+    cell.imgView.image = [UIImage imageNamed:[_apps[row] imagem] ];
     
     return cell;
 }
@@ -89,9 +99,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-        [_Nome removeObjectAtIndex:[indexPath row]];
-        [_Categoria removeObjectAtIndex:[indexPath row]];
-        [_Imagem removeObjectAtIndex:[indexPath row]];
+        [_apps removeObjectAtIndex:[indexPath row]];
         
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -126,7 +134,6 @@
 //    [_Nome insertObject:aux atIndex:toIndexPath.row];
 //    
     
-    
 }
 
 
@@ -150,7 +157,7 @@
         
         long row = [myIndexPath row];
         
-        detailViewController.appDetailModel = @[_Nome[row], _Categoria[row], _Imagem[row]];
+        detailViewController.appDetailModel = @[ [_apps[row] nome], [_apps[row] categoria], [_apps[row] imagem] ];
     }
 
 }

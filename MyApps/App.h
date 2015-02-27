@@ -10,9 +10,11 @@
 
 @interface App : NSObject
 {
-    NSString *nome, *categoria, *imagem;
+
 }
 
 - (instancetype) initWithNome:(NSString *)n andCateg:(NSString *)c andImg:(NSString *)i;
+
+@property NSString *nome, *categoria, *imagem;
 
 @end
