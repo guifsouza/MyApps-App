@@ -153,11 +153,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-jr-UQi">
-                                <rect key="frame" x="124" y="207" width="352" height="352"/>
+                                <rect key="frame" x="172" y="224" width="256" height="256"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="352" id="bF4-dX-9Tq"/>
-                                    <constraint firstAttribute="width" constant="352" id="dtl-HR-9Qd"/>
+                                    <constraint firstAttribute="height" constant="256" id="bF4-dX-9Tq"/>
+                                    <constraint firstAttribute="width" constant="256" id="dtl-HR-9Qd"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="6JG-Fs-kUq" appends="YES" id="ifg-eV-AKy"/>
@@ -177,7 +177,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fTT-NZ-vUA" secondAttribute="trailing" id="h2R-ZF-acV"/>
                             <constraint firstItem="9ll-Vv-ChL" firstAttribute="leading" secondItem="XAA-5x-neL" secondAttribute="leadingMargin" id="h5S-jQ-3yt"/>
                             <constraint firstItem="LkS-Sd-gQr" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="69" id="rtu-DI-tSK"/>
-                            <constraint firstItem="DEl-jr-UQi" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="143" id="uNU-9G-wCo"/>
+                            <constraint firstItem="DEl-jr-UQi" firstAttribute="top" secondItem="HDQ-kj-Kv8" secondAttribute="bottom" constant="160" id="uNU-9G-wCo"/>
                         </constraints>
                     </view>
                     <connections>
