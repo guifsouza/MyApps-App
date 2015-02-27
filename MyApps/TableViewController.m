@@ -122,12 +122,11 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 
-    // É assim que faz pra mover by: noone
-//    NSString *aux = [_Nome objectAtIndex:[fromIndexPath row]];
-//    [_Nome removeObjectAtIndex:fromIndexPath.row];
-//    [_Nome insertObject:aux atIndex:toIndexPath.row];
-//    
+    App *aux = [_apps objectAtIndex:[fromIndexPath row]];
+    [_apps removeObjectAtIndex:fromIndexPath.row];
+    [_apps insertObject:aux atIndex:toIndexPath.row];
     
+    //Movendo no array
 }
 
 

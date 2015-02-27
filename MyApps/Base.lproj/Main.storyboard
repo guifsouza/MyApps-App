@@ -101,20 +101,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcC-lk-8MK">
-                                <rect key="frame" x="154" y="172" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hcC-lk-8MK" secondAttribute="trailing" constant="2" id="CWZ-ok-xWq"/>
                             <constraint firstItem="g3G-qd-D4e" firstAttribute="leading" secondItem="2U3-Xi-dhM" secondAttribute="leadingMargin" id="NnG-b1-owV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g3G-qd-D4e" secondAttribute="trailing" id="UqR-NF-dKW"/>
-                            <constraint firstItem="hcC-lk-8MK" firstAttribute="leading" secondItem="2U3-Xi-dhM" secondAttribute="leadingMargin" constant="50" id="kHP-23-vv0"/>
                             <constraint firstAttribute="centerX" secondItem="g3G-qd-D4e" secondAttribute="centerX" constant="5" id="oVc-Vj-I7P"/>
-                            <constraint firstItem="hcC-lk-8MK" firstAttribute="top" secondItem="g3G-qd-D4e" secondAttribute="bottom" constant="57" id="oXh-b6-XHt"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -141,13 +133,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Categoria]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-NZ-vUA">
-                                <rect key="frame" x="16" y="162" width="568" height="26.5"/>
+                                <rect key="frame" x="16" y="162" width="568" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-Sd-gQr">
-                                <rect key="frame" x="263" y="133" width="75" height="20.5"/>
+                                <rect key="frame" x="263" y="133" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
